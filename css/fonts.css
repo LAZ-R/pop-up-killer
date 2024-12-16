@@ -1,0 +1,22 @@
+/* ==========================
+ Inter
+===========================*/
+
+@font-face { font-family: "inter-var"; src: url("../medias/fonts/inter/Inter.var.woff2") format("woff2"); }
+@font-face { font-family: "inter-var-italic"; src: url("../medias/fonts/inter/Inter-italic.var.woff2") format("woff2"); }
+
+/* ==========================
+ W95FA
+===========================*/
+
+@font-face { font-family: "w95fa"; src: url("../medias/fonts/W95FA/w95fa.woff2") format("woff2"); }
+
+/* ---------------------------------------------------------------------- */
+
+:root { 
+  /* font-family: 'inter-var', sans-serif; */
+  font-family: 'w95fa', sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  color: var(--color--fg-100);
+}

@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="fr" id="html">
+  <head>
+    <meta charset="utf-8">
+    <title id="title"></title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./css/main.css">
+    <link id="favicon" rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./medias/app-maskable-icons/app_icon_152.png">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover">
+    <meta name="theme-color" content="#000000"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="" id="appleTitle">
+    <meta name="msapplication-TileImage" content="./medias/app-maskable-icons/app_icon_144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+  </head>
+
+  <body id="body" class="crt">
+    <header id="header"></header>
+
+    <main id="main">
+      <section id="browserWindow" class="window">
+        <div id="browserWindowHeader" class="window-header">
+          <img src="./medias/images/ie-16.png" />
+          <span id="ieHeaderTitle">Microsoft Internet Explorer</span>
+          <div class="window-header-actions">
+            <button id="ieMinimize">
+              <img style="width: calc(14px * var(--multiplicator)); height: calc(12px * var(--multiplicator));" src="./medias/images/minimize.png" />
+            </button>
+            <button id="ieMaximize">
+              <img style="width: calc(14px * var(--multiplicator)); height: calc(12px * var(--multiplicator));"  src="./medias/images/maximize.png" />
+            </button>
+            <button id="ieClose">
+              <img style="width: calc(14px * var(--multiplicator)); height: calc(12px * var(--multiplicator));"  src="./medias/images/close.png" />
+            </button>
+          </div>
+        </div>
+        <div class="window-contextual-actions">
+          <button class="contextual-action"><span>F</span>ichier</button>
+          <button class="contextual-action"><span>E</span>dition</button>
+          <!-- <button class="contextual-action"><span>V</span>iew</button> -->
+        </div>
+        <div class="ie-top-container">
+          <div class="top-container-row">
+            <div class="window-ie-actions">
+              <div class="bars">
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <div class="action-button-container">
+                <button onclick="onBackClick()" class="ie-action-button">
+                  <img
+                    style="width: calc(30px * var(--multiplicator)); height: calc(20px * var(--multiplicator));"
+                    src="./medias/images/ie-back.png" />
+                  <span>Retour</span>
+                </button>
+                <button class="ie-action-button">
+                  <img
+                    style="width: calc(30px * var(--multiplicator)); height: calc(20px * var(--multiplicator));"
+                    src="./medias/images/ie-forward.png" />
+                  <span>Suivant</span>
+                </button>
+                <button class="ie-action-button">
+                  <img
+                    style="width: calc(30px * var(--multiplicator)); height: calc(20px * var(--multiplicator));"
+                    src="./medias/images/ie-stop.png" />
+                  <span>Stop</span>
+                </button>
+                <button class="ie-action-button">
+                  <img
+                    style="width: calc(30px * var(--multiplicator)); height: calc(20px * var(--multiplicator));"
+                    src="./medias/images/ie-refresh.png" />
+                  <span>Rafraîchir</span>
+                </button>
+                <button class="ie-action-button">
+                  <img
+                    style="width: calc(30px * var(--multiplicator)); height: calc(20px * var(--multiplicator));"
+                    src="./medias/images/ie-home.png" />
+                  <span>Accueil</span>
+                </button>
+                <button class="ie-action-button">
+                  <img
+                    style="width: calc(30px * var(--multiplicator)); height: calc(20px * var(--multiplicator));"
+                    src="./medias/images/ie-search.png" />
+                  <span>Recherche</span>
+                </button>
+                <button class="ie-action-button">
+                  <img
+                    style="width: calc(30px * var(--multiplicator)); height: calc(20px * var(--multiplicator));"
+                    src="./medias/images/ie-favorites.png" />
+                  <span>Favoris</span>
+                </button>
+                <button class="ie-action-button">
+                  <img
+                    style="width: calc(30px * var(--multiplicator)); height: calc(20px * var(--multiplicator));"
+                    src="./medias/images/ie-print.png" />
+                  <span>Imprimer</span>
+                </button>
+                <button class="ie-action-button">
+                  <img
+                    style="width: calc(30px * var(--multiplicator)); height: calc(20px * var(--multiplicator));"
+                    src="./medias/images/ie-font.png" />
+                  <span>Police</span>
+                </button>
+                <button class="ie-action-button">
+                  <img
+                    style="width: calc(30px * var(--multiplicator)); height: calc(20px * var(--multiplicator));"
+                    src="./medias/images/ie-mail.png" />
+                  <span>Email</span>
+                </button>
+              </div>
+            </div>
+            <div class="window-ie-logo">
+              <img id="ieLogo" src="./medias/images/ie-logo.png" />
+            </div>
+          </div>
+          <div class="top-container-row">
+            <div class="window-ie-adress">
+              <div class="bars">
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <span>Adresse</span>
+              <div class="url-container">
+                <span id="urlAdress"></span>
+                <button id="ieClose">
+                  <img style="width: calc(14px * var(--multiplicator)); height: calc(12px * var(--multiplicator));"  src="./medias/images/ie-adress.png" />
+                </button>
+              </div>
+            </div>
+            <div class="window-ie-links">
+              <div class="bars">
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <span>Liens</span>
+            </div>
+          </div>
+        </div>
+        <div class="window-content">
+          <div id="ieContent" class="content-html"></div>
+        </div>
+        <div class="ie-bottom">
+          <div class="ie-bottom-container first-one">
+            
+          </div>
+          <div class="ie-bottom-container middle-one">
+            
+          </div>
+          <div class="ie-bottom-container last-one">
+            <img src="./medias/images/ie-16.png" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <button id="startButton" class="start-button">
+        <img src="./medias/images/win95-16.png" />
+        <span>Démarrer</span>
+      </button>
+      <div id="taskbarCurrentArea" class="taskbar-current-area">
+        <button id="browserButton" class="taskbar-button active">
+          <img src="./medias/images/ie-16.png" />
+          <span id="ieFooterTitle">Microsoft Internet Explorer</span>
+        </button>
+        <!-- <button id="browserButton" style="opacity: 1;" class="taskbar-button">
+          <img src="./medias/images/ie-16.png" />
+          <span>Untitled</span>
+        </button> -->
+      </div>
+      <div id="taskbarClockArea" class="taskbar-clock-area" onclick="onClockClick()">2:38 PM</div>
+    </footer>
+
+    <div id="cover" class="cover" onclick="onCoverClick()"></div>
+  </body>
+
+  <script type="module" src="./js/main.js"></script>
+
+</html>
