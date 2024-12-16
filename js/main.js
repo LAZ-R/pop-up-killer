@@ -11,10 +11,10 @@ import { getRandomPopupObject } from "./services/popup.service.js";
 const MAIN = document.getElementById('main');
 const FOOTER = document.getElementById('footer');
 
-const ding = new Audio('../medias/audio/dingWin95.mp3');
-const tada = new Audio('../medias/audio/tadaWin95.mp3');
-const startup = new Audio('../medias/audio/startupWin95.mp3');
-const glitch = new Audio('../medias/audio/glitch.mp3');
+const ding = new Audio('./medias/audio/dingWin95.mp3');
+const tada = new Audio('./medias/audio/tadaWin95.mp3');
+const startup = new Audio('./medias/audio/startupWin95.mp3');
+const glitch = new Audio('./medias/audio/glitch.mp3');
 
 
 
